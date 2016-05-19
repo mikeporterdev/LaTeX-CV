@@ -1,0 +1,38 @@
+{
+	"folders":
+	[
+		{
+			"file_exclude_patterns":
+			[
+				"*.aux",
+				"*.glo",
+				"*.idx",
+				"*.log",
+				"*.toc",
+				"*.ist",
+				"*.acn",
+				"*.acr",
+				"*.alg",
+				"*.bbl",
+				"*.blg",
+				"*.dvi",
+				"*.glg",
+				"*.gls",
+				"*.ilg",
+				"*.ind",
+				"*.lof",
+				"*.lot",
+				"*.maf",
+				"*.mtc",
+				"*.mtc1",
+				"*.out",
+				"*.synctex.gz",
+				"main.pdf",
+				"*.fdb_latexmk",
+				"*.fls",
+				"cover.pdf"
+			],
+			"path": "."
+		}
+	]
+}
