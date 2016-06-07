@@ -1,3 +1,4 @@
+% !TEX program = xelatex
 \documentclass[a4paper,10pt]{article}
 
 %A Few Useful Packages
@@ -10,6 +11,8 @@
 % an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
+
+\usepackage{enumitem}
 
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
@@ -35,9 +38,6 @@ ItalicFont = Fontin-Italic.otf
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
 
-%Italian hyphenation for the word: ''corporations''
-\hyphenation{im-pre-se}
-
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
 
@@ -45,6 +45,8 @@ ItalicFont = Fontin-Italic.otf
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
+
+\newcommand{\tabitem}{~~\footnotesize\llap{\textbullet}~~}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
@@ -56,6 +58,10 @@ ItalicFont = Fontin-Italic.otf
 %--------------------TITLE-------------
 \par{\centering
 		{\Huge Michael Porter
+	}\par}
+
+\par{\centering
+		{\large Software Developer
 	}\bigskip\par}
 
 %--------------------SECTIONS-----------------------------------
@@ -66,16 +72,8 @@ ItalicFont = Fontin-Italic.otf
 
 \input{education}
 
-\section{Computer Skills}
-\begin{tabular}{rl}
- Basic Knowledge:& \textsc{php}, my\textsc{sql}, \textsc{html}, Access, \textsc{Linux}, ubuntu, {\fb \LaTeX}\setmainfont[SmallCapsFont=Fontin-SmallCaps.otf]{Fontin.otf}\\
-Intermediate Knowledge:& \textsc{vba}, Excel, Word, PowerPoint\\
-\end{tabular}
+\input{computerskills}
 
-\section{Interests and Activities}
-Technology, Open-Source, Programming\\
-Paradoxes in Decision Making, Psychoanalysis, Behavioural Finance\\
-Football, Travelling
-
+%\input{interests}
 
 \end{document}
