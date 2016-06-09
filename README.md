@@ -4,4 +4,5 @@
 LaTeX files for generating my CV pdf.
 
 
-Work in progress.
+Created as an experiment for using LaTeX to compile a CV. Work in progress.
+Not currently looking for work.
