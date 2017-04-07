@@ -1,1 +1,1 @@
-xelatex -output-directory=out cv.tex
+xelatex -halt-on-error -interaction=nonstopmode -output-directory=out cv.tex
