@@ -1,8 +1,8 @@
 # Michael Porter CV
-[![PDF Status](https://www.sharelatex.com/github/repos/mikeporterdev/LaTeX-CV/builds/latest/badge.svg)](https://www.sharelatex.com/github/repos/mikeporterdev/LaTeX-CV/builds/latest/output.pdf)
+[![Build Status](https://travis-ci.org/mikeporterdev/LaTeX-CV.svg?branch=master)](https://travis-ci.org/mikeporterdev/LaTeX-CV)
 
 LaTeX files for generating my CV pdf.
 
 
-Created as an experiment for using LaTeX to compile a CV. Work in progress.
+Created as an experiment for using LaTeX and Travis to compile a CV. Work in progress.
 Not currently looking for work.
