@@ -2,5 +2,8 @@ sudo: required
 dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
-script:
-- xelatex -interaction=nonstopmode -halt-on-error *.tex
+script: bash ./deploy.sh
+env:
+  global:
+  - ENCRYPTION_LABEL: "7fafeaaa2ca4"
+  - COMMIT_AUTHOR_EMAIL: "m_porter@live.co.uk"
