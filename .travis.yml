@@ -8,6 +8,7 @@ addons:
     - texlive-fonts-recommended
     - lmodern
     - latex-xcolor
+    - texlive-lang-italian
 script: bash ./compile.sh
 deploy:
   provider: releases
