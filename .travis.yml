@@ -2,8 +2,12 @@ sudo: required
 dist: trusty
 before_install:
 - sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-full
-script: bash ./deploy.sh
-env:
-  global:
-  - ENCRYPTION_LABEL: "7fafeaaa2ca4"
-  - COMMIT_AUTHOR_EMAIL: "m_porter@live.co.uk"
+script: bash ./compile.sh
+deploy:
+  provider: releases
+  api_key:
+    secure: pFpAEiCFkbFMk3QfY27xCi/K/cU7rS75t218OBcF2vRyrUrR0oZzrThyggYMgYERD+ihKmUcmXKpO2s7zFNJPThojy75hEWKe0KxOG+SFwL4KVuCziHsZdhqzDg4rUgSrqYnUcRHFfPaLhMpxoUUBtkeYBq3dOMnAUaMMWPsCYOzJWgdnyKv9qhqYiTYD83MRW++OzuutoG15XggTImGMWH9RJ2uLEj9fuacSkAqoZCVTTgyta5/qFKuEIBcte+/rJAepYqcK69iKxF158iXXJP9ECUSQSRyQUJZBXbtQn7QYOwu5cFUwAM5Y6Qzc6HnPjZvenY97rBCMBSNym33eSuIKzoFf7ZmovVJx46A0/6nyZYjfsQN3GnAeEOhU4y96H5ln4hDBVC5NUQvrIC+WwsO/HGUMWLesBC7nPStlKTrNQJFia9uwiP/K9M9cjWonMmgjTsn7PKp0DMOTXGC3lLWwIE1lrhmx35pzGolkz0IcCWfuIQ2W+ClBjPBSdgtbDPf1qhAI0VpWriKuVY8Eca0kzZh6d+pq92fY8hB7pENCAkk1pvEm2WLzx8JaKq4dyil9qWHtasO5PSsa6CXKcl1RD6WoRvfQW+RecDaUv8ffng1E5DhTAhOyPDbztfyZdTau49DzvIZUxRlehK2JKlq9n8P5XRc1/FvCcNe0DA=
+  file: out/cv.pdf
+  skip_cleanup: true
+  on:
+    repo: mikeporterdev/LaTeX-CV
