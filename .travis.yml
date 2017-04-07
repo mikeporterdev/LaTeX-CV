@@ -1,7 +1,7 @@
 sudo: required
 dist: trusty
 before_install:
-- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-xetex
+- sudo apt-get -qq update && sudo apt-get install -y --no-install-recommends texlive-xetex texlive-fonts-recommended
 script: bash ./deploy.sh
 env:
   global:
