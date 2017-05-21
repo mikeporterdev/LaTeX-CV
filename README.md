@@ -3,6 +3,5 @@
 
 LaTeX files for generating my CV pdf.
 
-
-Created as an experiment for using LaTeX and Travis to compile a CV. Work in progress.
+Created as an experiment for using LaTeX and Travis CI to compile a CV. Work in progress.
 Not currently looking for work.

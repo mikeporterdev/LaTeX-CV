@@ -12,7 +12,7 @@
 \usepackage{titlesec}					%custom \section
 
 \usepackage{enumitem}
-
+\usepackage{longtable}
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
@@ -65,14 +65,18 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------SECTIONS-----------------------------------
 
-\input{personaldata}
+\input{sections/personaldata}
 
-\input{workexperience}
+\input{sections/summary}
 
-\input{education}
+\input{sections/workexperience}
 
-\input{computerskills}
+\input{sections/achievements}
 
-%\input{interests}
+\input{sections/education}
+
+\input{sections/computerskills}
+
+\centering{This CV was written in LaTeX, hosted on GitHub and compiled with Travis CI}
 
 \end{document}
