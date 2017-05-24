@@ -8,8 +8,7 @@
 \usepackage{fontspec} 					%for loading fonts
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{fullpage} 
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 
@@ -42,13 +41,11 @@ ItalicFont = Fontin-Italic.otf
 
 %-------------WATERMARK TEST [**not part of a CV**]---------------
 \usepackage[absolute]{textpos}
-
+\usepackage[none]{hyphenat}
 \setlength{\TPHorizModule}{30mm}
 \setlength{\TPVertModule}{\TPHorizModule}
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
-
-\newcommand{\tabitem}{~~\footnotesize\llap{\textbullet}~~}
 
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
