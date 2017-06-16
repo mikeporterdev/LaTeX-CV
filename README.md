@@ -4,4 +4,4 @@
 LaTeX files for generating my CV pdf.
 
 Created as an experiment for using LaTeX and Travis CI to compile a CV.
-Currently looking for work.
+Not currently looking for work.
