@@ -18,3 +18,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: mikeporterdev/LaTeX-CV
+    branches:
+      only:
+        - master
