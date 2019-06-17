@@ -4,4 +4,5 @@
 LaTeX files for generating my CV pdf.
 
 Created as an experiment for using LaTeX and Travis CI to compile a CV.
-Not currently looking for work.
+
+[View CV](https://docs.google.com/viewer?url=https://github.com/mikeporterdev/LaTeX-CV/releases/latest/download/cv.pdf)
