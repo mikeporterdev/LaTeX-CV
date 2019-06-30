@@ -5,18 +5,18 @@
 
 %A Few Useful Packages
 \usepackage{marvosym}
-\usepackage{fontspec} 					%for loading fonts
+\usepackage{fontspec}                    %for loading fonts
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage{fullpage} 
-\usepackage{supertabular} 				%for Grades
-\usepackage{titlesec}					%custom \section
+\usepackage{fullpage}
+\usepackage{supertabular}                %for Grades
+\usepackage{titlesec}                    %custom \section
 
 \usepackage{enumitem}
 \usepackage{longtable}
 %Setup hyperref package, and colours for links
 \usepackage{hyperref}
-\usepackage[UKenglish]{babel}   
+\usepackage[UKenglish]{babel}
 \definecolor{linkcolour}{rgb}{0,0.2,0.6}
 \hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
 
@@ -50,48 +50,48 @@ ItalicFont = Fontin-Italic.otf
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 
-\pagestyle{empty} % non-numbered pages
+    \pagestyle{empty} % non-numbered pages
 
-\font\fb=''[cmr10]'' %for use with \LaTeX command
+    \font\fb=''[cmr10]'' %for use with \LaTeX command
 
-%--------------------TITLE-------------
-\par{
-	\centering{
-		\LARGE Michael Porter
-	}\par
-}
-	
-\vspace{4pt}
+    %--------------------TITLE-------------
+    \par{
+    \centering{
+    \LARGE Michael Porter
+    }\par
+    }
 
-\par{
-	\centering{
-		\large Software Developer\\
-		\small \href{mailto:recruitment@mikeporter.dev}{recruitment@mikeporter.dev} - +447936 890296 \\ \href{https://github.com/mikeporterdev/}{https://github.com/mikeporterdev}
-	}\par
-}
+    \vspace{4pt}
 
-
-
-%--------------------SECTIONS-----------------------------------
-
-% \input{sections/01personaldata}
-
-\input{sections/02summary}
-
-\input{sections/03computerskills}
-
-\input{sections/04relevantexperience}
-
-\input{sections/05achievements}
-
-% \input{sections/06otherexperience}
-
-\input{sections/07education}
-
-\input{sections/08interests}
+    {
+    \centering{
+    \large Software Developer\\
+    \small \href{mailto:recruitment@mikeporter.dev}{recruitment@mikeporter.dev} - +447936 890296 \\ \href{https://github.com/mikeporterdev/}{https://github.com/mikeporterdev}
+    }\par
+    }
 
 
-\vspace*{\fill}
+
+    %--------------------SECTIONS-----------------------------------
+
+    % \input{sections/01personaldata}
+
+    \input{sections/02summary}
+
+    \input{sections/03computerskills}
+
+    \input{sections/04relevantexperience}
+
+    \input{sections/05achievements}
+
+    % \input{sections/06otherexperience}
+
+    \input{sections/07education}
+
+    \input{sections/08interests}
+
+
+    \vspace*{\fill}
 
 \end{document}
 
