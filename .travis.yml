@@ -3,20 +3,20 @@ dist: trusty
 addons:
   apt:
     packages:
-    - texlive-xetex
-    - texlive-latex-extra
-    - texlive-fonts-recommended
-    - lmodern
-    - latex-xcolor
-    - texlive-lang-italian
+      - texlive-xetex
+      - texlive-latex-extra
+      - texlive-fonts-recommended
+      - lmodern
+      - latex-xcolor
+      - texlive-lang-italian
 script: bash ./compile.sh
 deploy:
   provider: releases
   api_key:
-    secure: lWz3Kjh6mZhLp6k+snafDO/HpUeYOs+uZ0/Pi1GUX/vWHAre3nG+mMMdEXuk6d6Bwg8y/WB760yjyEXWaSxIViGZnR9oetw0wZiEF0PwIxUS9giEF6HE5GwhuOhNbQIIHsxpy21JR8zjzAhUpjCGjBQI31TP4qnFbJCy4Hi9A79lqtrt7E243iw8Evsefj96wbIE1QAcP90Kj/sS5KV1jwlQ6/z2+aG0pCy2Gp0GG6s89SOUo1b5MxFAaxnotbzDKchzuIUywm3lj6lM+DzKF3KVop482U/TQ+EwnhrUa2L6cZqSOZ9oZ5P3uovJ9gHKdMrOJpl0vVFdXfUTV0jgwgFsmGVxcXG6K8wUn6m+RPgCKF+WfmIw3hrN+xjhnXEp2ZLpiDkEE+CWbZmVJEPaGjnbyPNZ7exNzwpNh7CO1cTA8iLPAOEcWiP8llG2CNUO9Bkva4/jrtsscoLLyqIEJiBRJYpM8HeO4qfxJstSrCGTD1GqvakI66a/TheLfAK9/DRPfkVPjHEt6WfGbn01nuWiMsx+BpdHzpI5R0lbzr73qhAppiImP52ttX4mMvGPkKBTmkfmhEyBGgaxq7NoXXxnelC5ja5gecl8qr9NEScHzRV2UhnJSuYWMJ99M3E1BlXjS7z0xD1bGUH/1YBlypYF2mCU/CoF6mMa7m011C8=
+    secure: T1jJXAbcCVn4Ec862kyRURDIbFfa7lAP66VwFuJGARkOQpjXFLD6HROe9n965hSWzKqxwxy/k+tmNJDr4rrfqAuAMxoyJ33vXbMTfpDWN/e7c7gAuwogBi4aI6FxsM9PUfk2wYP17WbgqN4ARa5TMlxc3NVNY2v8Ow+APOU+rg0aEi3+mVYG8PdsJQPRvvE+Z+81I7tqlDRgf9mu1clmph6A6QceceInaMr01YxgzJkOnJQuW2g3odRH/2kf5/6UE70ZybV+WdTL2cbk/mbvwT5CdeUN4NZFz06ilubSYbuHTfSULtCvQGTk3fP+2v1Z4sN+Bc906KixMHw4eFvmnLPGMEJEfoCwlbskW6wlQ3a4U+s33xQf5XmE3x3rSEmOXzTGCg3CW4FKHyqx93C2/oMLyIf4kQItrFfuOpyUZlrInciY24JK1FFtlu+2o4UvIo3vDyU7ZGVgMFMpF4KC7q9yTXyjrDccQn57OEC1U3ySiF+4OzxayfD2INZcWvBr6YSzqvoy/+JQ2GaOwkj+666hrD0ni+OlyjpMNUpcdq+llomzu8xGr9g8k57J/8I3hA6vyWftCP/zEtuXVO9Z/AaBO4IWpkzftivS8EHM/KViuaXBE4/iKefbyxFJjF7lNQt8HN8nsd8wstNFbd9rmxS/DqXwwu1VSzjMh6POFhU=
   file: out/cv.pdf
   skip_cleanup: true
-  on:
+  true:
     repo: mikeporterdev/LaTeX-CV
     branches:
       only:
