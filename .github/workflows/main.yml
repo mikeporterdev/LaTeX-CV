@@ -1,4 +1,4 @@
-name: Github Action
+name: Main
 on: [push]
 jobs:
   build_latex:
