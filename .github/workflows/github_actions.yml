@@ -16,4 +16,4 @@ jobs:
         uses: ncipollo/release-action@v1
         with:
           artifacts: "cv.pdf"
-          tag: main
+          tag: release-${GITHUB_SHA}
