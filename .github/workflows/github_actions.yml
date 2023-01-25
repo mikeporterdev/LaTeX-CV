@@ -15,5 +15,5 @@ jobs:
         id: create_release
         uses: ncipollo/release-action@v1
         with:
-          artifacts: "out/cv.pdf"
+          artifacts: "cv.pdf"
           tag: main
